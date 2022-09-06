@@ -1,0 +1,52 @@
+create table movies (
+id bigserial,
+name text,
+description text,
+release_time int,
+genre text,
+director text,
+producer text,
+actors text,
+start text
+);
+
+
+insert into movies(name,description, release_time) values ('Matrix', '1111111111111111111111111111111111111111', 2010),
+('Matrix2', '1111111111111111111111111111111111111111', 2010),
+('Matrix3', '1111111111111111111111111111111111111111', 2010),
+('Dominion', '1111111111111111111111111111111111111111', 2010),
+('doctor who', '222222222222222222', 2000),
+('the originals', '33333333333333333333', 2013),
+('Vikings', '444444444', 2005),
+('Supernatural', '55555555555555', 2005),
+('Dragon', '77777777777777777', 2005),
+('dragon ball', '123125123123', 2005),
+('Naruto', '12515123123', 2005),
+('Boruto', '1qwceqwcwqe', 2005),
+('Witcher', 'qqqqqqqqqqq', 2005),
+('Watcher', '444qqqqqqqqqqqqqqq444444', 2001),
+('Against someone', '444qqqqqqqqqqqqqqqq444444', 2002),
+('ZZZZZZZZZZZZZZZZZ', '44qqqqqqqqqqqqq4444444', 2003),
+('Resident evil', '44qqqqqqqqqqqqq4444444', 2009),
+('Resident evil2', '44qqqqqqqqqqqqq4444444', 2008),
+('Resident evil3', '44qqqqqqqqqqqqq4444444', 2007),
+('Resident evil4', '44qqqqqqqqqqqqq4444444', 2006),
+('Resident evil5', '44qqqqqqqqqqqqq4444444', 2005),
+('Resident evil6', '44qqqqqqqqqqqqq4444444', 2004),
+('Monsters', '44qqqqqqqqqqqqq4444444', 2011),
+('12 Angry Men', '44qqqqqqqqqqqqq4444444', 2011),
+('Schindlers List', '44qqqqqqqqqqqqq4444444', 2011),
+('The Lord of the Rings', '44qqqqqqqqqqqqq4444444', 2011),
+('Hulk', '44qqqqqqqqqqqqq4444444', 2011),
+('Avengers', '44qqqqqqqqqqqqq4444444', 2011),
+('Avengers2', '44qqqqqqqqqqqqq4444444', 2011),
+('Avengers3', '44qqqqqqqqqqqqq4444444', 2011),
+('Wanda & Vision', '44qqqqqqqqqqqqq4444444', 2011),
+('Doctor strage', '44qqqqqqqqqqqqq4444444', 2011),
+('Doctor strage2', '44qqqqqqqqqqqqq4444444', 2011),
+('Iron man', '44qqqqqqqqqqqqq4444444', 2011),
+('Thor', '44qqqqqqqqqqqqq4444444', 2011),
+('Forrest Gump', '44qqqqqqqqqqqqq4444444', 2011);
+
+
+
