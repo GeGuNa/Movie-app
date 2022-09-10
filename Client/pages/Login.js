@@ -35,15 +35,16 @@ class Login2 extends Component {
     	
     
 }
-
+/*
 async componentWillMount(){
-	 /*
+	 
 	const QzAuth = await Auth();
     
     if (QzAuth.status == 'success') {
 		return this.props.navigate('/')
-	}	*/
+	}	
 }
+*/
 
 async componentDidMount() {
 	document.title = 'login';
@@ -75,7 +76,7 @@ if (resp.status === 200 && resp.data.id) {
 	Qcookies.set('username', this.state.nick, { path: '/', maxAge: (60*60*24*30) } ); 
 	Qcookies.set('password', sha256(this.state.pswd).toString(), { path: '/', maxAge: (60*60*24*30) } );
 	this.setState({rError:''})
-	this.props.navigate('/login')
+	this.props.navigate('/')
 	
 } else {
 	this.setState({rError:'either nickname or password is incorrect'})
@@ -98,13 +99,23 @@ Qsetuserpass(e){
 }
 
 render(){
-return (<>
+
+/*
+
 
 {console.log(this.state.user.status)}
 
-   {this.state.user.status == 'success' && (<> 
+   {this.state.user.status === 'success' && (<> 
 	   {this.state.user.text.id}  ||  {this.state.user.text.nickname}
   </>)}
+
+
+*/
+
+
+return (<>
+
+
  
   
 
@@ -197,20 +208,14 @@ function Login(props) {
 let navigate = useNavigate();	
 	
 
+const qzdtqu = Qcookies.get('username')	
+const qzdtqp = Qcookies.get('password')	
 	
-/*	
-(async() => {
-
-const qq2131 = await Auth();
-	
-if (qq2131.status == 'success') {
-	return navigate('/')
+if (qzdtqu && qzdtqp) {
+	return window.location = '/'
 } else {
-	*/ return <Login2 {...props} navigate={navigate} />
-//}
-	
-//})()
-
+	return <Login2 {...props} navigate={navigate} />
+}
     
    
 }

@@ -66,8 +66,8 @@ return (
 <Route path="/cat/:id" element={<Cat />} />
 <Route path="/ongoing" element={<Ongoing />} />
 
-{!qname && <Route path="/login" element={<Login />} />}
-{!qname && <Route path="/registration" element={<Register />} />}
+<Route path="/login" element={<Login />} />
+<Route path="/registration" element={<Register />} />
 {qname && <Route path="/Profile" element={<Profile />} />}
 <Route path="*" element={<Error_Detected/>} /> 
 
